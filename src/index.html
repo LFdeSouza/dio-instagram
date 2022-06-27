@@ -13,9 +13,22 @@
       <div class="relative hidden max-h-[50rem] custom-break:block">
         <img src="./assets/instagram-celular2.png" alt="Smartphone image" />
         <img
+          id="cell-image1"
           src="./assets/instagram-celular-img1.png"
-          alt="imagem"
-          class="absolute top-[1.6rem] right-[3.5rem]"
+          alt="imagem 1"
+          class="absolute top-[1.6rem] right-[3.5rem] opacity-100 transition-opacity ease-in"
+        />
+        <img
+          id="cell-image2"
+          src="./assets/instagram-celular-img2.png"
+          alt="imagem 2"
+          class="absolute right-[3.5rem] top-[1.6rem] opacity-0 transition-opacity ease-in"
+        />
+        <img
+          id="cell-image3"
+          src="./assets/instagram-celular-img3.png"
+          alt="imagem 3"
+          class="absolute top-[1.6rem] right-[3.5rem] opacity-0 transition-opacity ease-in"
         />
       </div>
 
@@ -33,31 +46,40 @@
 
           <form class="mt-4 flex w-full flex-col items-center gap-2">
             <div class="relative w-full">
-              <label
-                for="username"
-                class="absolute top-2 left-4 cursor-text text-sm text-gray-400"
-                >Phone number, username or email</label
-              >
               <input
                 type="text"
                 id="username"
-                class="w-full rounded border-[1px] border-gray-200 bg-gray-50 p-1.5"
+                value=""
+                class="peer w-full rounded border-[1px] border-gray-200 bg-gray-50 px-2 pt-4 pb-1 text-xs placeholder-transparent focus:border-gray-400 focus:outline-none"
+                placeholder="Phone number, username or email"
               />
+              <label
+                id="username-label"
+                for="username"
+                class="absolute top-1 left-2 cursor-text text-[0.6rem] text-gray-400 transition-all duration-100 ease-in peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400"
+                >Phone number, username or email</label
+              >
             </div>
             <div class="relative w-full">
+              <input
+                type="text"
+                id="password"
+                value=""
+                class="peer w-full rounded border-[1px] border-gray-200 bg-gray-50 px-2 pt-4 pb-1 text-xs placeholder-transparent focus:border-gray-400 focus:outline-none"
+                placeholder="password"
+              />
               <label
-                for="username"
-                class="absolute top-2 left-4 cursor-text text-sm text-gray-400"
+                id="password-label"
+                for="password"
+                class="absolute top-1 left-2 cursor-text text-[0.6rem] text-gray-400 transition-all duration-100 ease-in peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400"
                 >Password</label
               >
-              <input
-                type="password"
-                class="w-full rounded border-[1px] border-gray-200 bg-gray-50 p-1.5"
-              />
             </div>
             <button
+              disabled="true"
+              id="btn-form"
               type="submit"
-              class="w-full rounded bg-blue-500 p-1 text-white"
+              class="w-full rounded bg-blue-500 p-1 text-white disabled:bg-blue-100"
             >
               Log in
             </button>
