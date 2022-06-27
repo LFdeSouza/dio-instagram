@@ -5,6 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram login clone</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script src="./script.js" defer></script>
   </head>
-  <body></body>
+  <body class="bg-gray-50">
+    <main class="mt-36 flex justify-center">
+      <div class="relative hidden max-h-[50rem] md:block">
+        <img src="./assets/instagram-celular2.png" alt="Smartphone image" />
+        <img
+          src="./assets/instagram-celular-img1.png"
+          alt="imagem"
+          class="absolute top-[1.6rem] right-[3.5rem]"
+        />
+      </div>
+
+      <div class="flex flex-col">
+        <div
+          class="flex h-[26rem] w-[22rem] flex-col items-center border-[1px] border-gray-300 bg-white p-9"
+        >
+          <div class="flex justify-center py-5">
+            <img
+              src="./assets/instagram-logo.png"
+              alt="Instagram logo"
+              class="w-5/6"
+            />
+          </div>
+
+          <form class="mt-4 flex w-full flex-col items-center gap-2">
+            <div class="relative w-full">
+              <label
+                for="username"
+                class="absolute top-2 left-4 cursor-text text-sm text-gray-400"
+                >Phone number, username or email</label
+              >
+              <input
+                type="text"
+                id="username"
+                class="w-full rounded border-[1px] border-gray-200 bg-gray-50 p-1.5"
+              />
+            </div>
+            <div class="relative w-full">
+              <label
+                for="username"
+                class="absolute top-2 left-4 cursor-text text-sm text-gray-400"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="w-full rounded border-[1px] border-gray-200 bg-gray-50 p-1.5"
+              />
+            </div>
+            <button
+              type="submit"
+              class="w-full rounded bg-blue-500 p-1 text-white"
+            >
+              Log in
+            </button>
+          </form>
+
+          <div class="mt-5 flex w-full items-center">
+            <div class="h-1 w-full border-b-[1px] border-gray-300"></div>
+            <p class="px-5 text-sm font-semibold text-gray-400">OR</p>
+            <div class="h-1 w-full border-b-[1px] border-gray-300"></div>
+          </div>
+
+          <div class="mt-6 flex flex-col items-center">
+            <a href="/" class="flex gap-2 text-sm font-semibold text-blue-600"
+              ><span
+                ><svg
+                  class="h-5 w-5"
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 455.73 455.73"
+                  style="enable-background: new 0 0 455.73 455.73"
+                  xml:space="preserve"
+                >
+                  <path
+                    style="fill: #3a559f"
+                    d="M0,0v455.73h242.704V279.691h-59.33v-71.864h59.33v-60.353c0-43.893,35.582-79.475,79.475-79.475
+	            h62.025v64.622h-44.382c-13.947,0-25.254,11.307-25.254,25.254v49.953h68.521l-9.47,71.864h-59.051V455.73H455.73V0H0z"
+                  /></svg></span
+              >Log in with Facebook</a
+            >
+            <a href="/" class="mt-5 block text-xs text-blue-900"
+              >Forgot password?</a
+            >
+          </div>
+        </div>
+        <div
+          class="mt-2 w-[22rem] border-[1px] border-gray-300 bg-white px-9 py-5 text-center"
+        >
+          <h2 class="text-sm">
+            Don't have an account?
+            <span class="cursor-pointer text-blue-500 hover:text-blue-400"
+              >Sign up</span
+            >
+          </h2>
+        </div>
+        <div>
+          <h2 class="p-4 text-center text-sm">Get the app.</h2>
+          <div class="flex justify-center gap-2">
+            <img
+              src="./assets/apple-button.png"
+              alt=""
+              class="w-32 cursor-pointer"
+            />
+            <img
+              src="./assets/googleplay-button.png"
+              alt=""
+              class="w-32 cursor-pointer"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="/">Meta</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Blog</a></li>
+        <li><a href="/">Jobs</a></li>
+        <li><a href="/">Help</a></li>
+        <li><a href="/">API</a></li>
+        <li><a href="/">Privacy</a></li>
+        <li><a href="/">Terms</a></li>
+        <li><a href="/">Top Accounts</a></li>
+        <li><a href="/">Locations</a></li>
+        <li><a href="/">Instagram Lite</a></li>
+        <li><a href="/">Contact Uploading & Non-Users</a></li>
+        <li><a href="/">Dance</a></li>
+        <li><a href="/">Food & Drink</a></li>
+        <li><a href="/">Home & Garden</a></li>
+        <li><a href="/">Music</a></li>
+        <li><a href="/">Visual Arts</a></li>
+      </ul>
+    </footer>
+  </body>
 </html>
